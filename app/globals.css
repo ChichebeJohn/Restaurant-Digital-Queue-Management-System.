@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Lakki+Reddy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome {
+  background: linear-gradient(to bottom, #F9CE28, #EA8309);
+  text-align: center;
+  width: auto;
+  height: auto;
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.welcome-text {
+  padding-top: 42px;
+  color: #211F1F;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.highway {
+  color: #fff;
+  font-family: 'Kameron', serif;
+  font-weight: 700;
+  font-size: 55px;
+  padding-top: 5px;
+}
+
+.bistro {
+  color: #fff;
+  font-family: 'Lakki Reddy', cursive;
+  font-weight: 700;
+  font-size: 55px;
+  padding: 15px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container-1 img {
+  width: 100%;
+  height: 75vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+}
+
+.image-container-1 .btn {
+  background-color: #F9CE28;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Kameron', serif;
+  font-weight: 700;
+  width: 200px;
+  height: 80px;
+  border: solid white;
+  text-decoration: none;
+}
+
+.image-container-1 .btn:hover {
+  background-color: #EA8309;
+}
+
+
+/* style for menu.js .................................................*/
+
+.signin {
+  background-color: #f9ce28;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+.left-border,
+.right-border {
+  width: 100px;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; /* Align at the top */
+}
+
+.right-border {
+  background-image: url('/design1.png');
+}
+
+.left-border {
+  background-image: url('/design1.png');
+}
+
+.content {
+  flex-grow: 1;
+  padding: 15px;
+  background-color: #d9d9d9;
+  overflow: hidden; /* Prevent overflow caused by the image */
+  height: 75%;
+  width: 100%;
+  margin-top: 20%;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: solid white;
+}
+
+.content p {
+  font-family: 'Kaushan Script', cursive;
+  color: #a43811;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.email-form {
+  margin-bottom: 20px;
+}
+
+.email-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #a43811;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.image-container-2 {
+  flex-grow: 1; /* Allow the image to fill the remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the space without distortion */
+}
+
+.view-menu-btn {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #f9ce28;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3;
+  border: solid white;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Kameron', serif;
+  font-weight: 700;
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.view-menu-btn:hover {
+  background-color: #ea8309;
+  color: #ffff;
+  border: 2px solid #a43811;
+  border: solid white;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding: 0;
+    margin-top: 5px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .image-container-2 img{
+    width: 220px;
+    height: 300px;
+  }
+}
+
+/* @media(min-width: 1024px) {
+  .image-container-1 img{
+    width: 400px;
+    height: 500px;
+  }
+} */
