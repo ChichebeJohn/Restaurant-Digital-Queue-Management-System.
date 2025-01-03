@@ -110,11 +110,11 @@
 }
 
 .right-border {
-  background-image: url('/design1.png');
+  background-image: url('/design 1.png');
 }
 
 .left-border {
-  background-image: url('/design1.png');
+  background-image: url('/design 1.png');
 }
 
 .content {
@@ -187,6 +187,7 @@
   height: 80px;
   overflow: hidden;
   border-radius: 10px;
+  padding: 0;
 }
 
 .view-menu-btn:hover {
@@ -194,6 +195,7 @@
   color: #ffff;
   border: 2px solid #a43811;
   border: solid white;
+
 }
 
 @media (min-width: 1024px) {
